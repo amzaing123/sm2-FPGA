@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jan 11 21:21:43 2025
+# Process ID: 12384
+# Current directory: D:/Li/program/vivado_program/mod_test - 副本/mod_count.runs/synth_1
+# Command line: vivado.exe -log k_point.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source k_point.tcl
+# Log file: D:/Li/program/vivado_program/mod_test - 副本/mod_count.runs/synth_1/k_point.vds
+# Journal file: D:/Li/program/vivado_program/mod_test - 副本/mod_count.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source k_point.tcl -notrace
+Command: synth_design -top k_point -part xcku060-ffva1156-3-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku060'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28108 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod2_integer.v:52]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_add.v:59]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:145]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:152]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:159]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:165]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:173]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:180]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:423]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:429]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:477]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:523]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:575]
+WARNING: [Synth 8-1102] /* in comment [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/k_point.v:438]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 706.516 ; gain = 246.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'k_point' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/k_point.v:21]
+	Parameter z bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'pointdouble2' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointdouble2.v:21]
+	Parameter a1 bound to: 256'b0111100001111001011010001011010011111010001100101100001111111101001001000001011110000100001011100111001110111011111111101111111100101111001111001000010010001011011010000011000111010111111000001110110001100101001000101000101100111001001101111110010010011000 
+INFO: [Synth 8-6157] synthesizing module 'montgomery_mul' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:23]
+	Parameter P bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101111001000101011100101000001110010001010111000100010101010001011111010111001000101110110110111000101100001000111100011101111111000011 
+	Parameter P_1 bound to: 256'b1010110011101000110000000001100100010001011110111001000110101000011111001000010111100010100001110010110000001000110111010000110100111011100001000110010110111100100111000010111010011101000001101010001010100000001110000000110001010000111101110111011100010101 
+	Parameter R2 bound to: 256'b0000101011100101010100100010100100101000001111001101100101101010111011100100110110000111110110101001000011011000110001100110110011101011001101110010110110101000001111111100100111000110001101100011110101010111100111000100011011110110110111100001100011110010 
+	Parameter zeros bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'mult256' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mult256.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mult256.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'mult256' (1#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mult256.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:221]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:287]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:416]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:465]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:510]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:559]
+WARNING: [Synth 8-6014] Unused sequential element state2_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:276]
+WARNING: [Synth 8-6014] Unused sequential element B_temp_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:356]
+INFO: [Synth 8-6155] done synthesizing module 'montgomery_mul' (2#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/montgomery_mul.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mod3_integer' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod3_integer.v:23]
+	Parameter P bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101111001000101011100101000001110010001010111000100010101010001011111010111001000101110110110111000101100001000111100011101111111000011 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod3_integer.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'mod3_integer' (3#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod3_integer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mod4_integer' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod4_integer.v:23]
+	Parameter P bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101111001000101011100101000001110010001010111000100010101010001011111010111001000101110110110111000101100001000111100011101111111000011 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod4_integer.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'mod4_integer' (4#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod4_integer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mod2_integer' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod2_integer.v:23]
+	Parameter P bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101111001000101011100101000001110010001010111000100010101010001011111010111001000101110110110111000101100001000111100011101111111000011 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod2_integer.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'mod2_integer' (5#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod2_integer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mod8_integer' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod8_integer.v:23]
+	Parameter P bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101111001000101011100101000001110010001010111000100010101010001011111010111001000101110110110111000101100001000111100011101111111000011 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod8_integer.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'mod8_integer' (6#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod8_integer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mod_add' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_add.v:23]
+	Parameter P bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101111001000101011100101000001110010001010111000100010101010001011111010111001000101110110110111000101100001000111100011101111111000011 
+INFO: [Synth 8-6155] done synthesizing module 'mod_add' (7#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_add.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mod_reduce' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_reduce.v:21]
+	Parameter P bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101111001000101011100101000001110010001010111000100010101010001011111010111001000101110110110111000101100001000111100011101111111000011 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_reduce.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'mod_reduce' (8#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_reduce.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointdouble2.v:278]
+WARNING: [Synth 8-6014] Unused sequential element z_common1_temp_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointdouble2.v:245]
+WARNING: [Synth 8-6014] Unused sequential element z_common2_temp_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointdouble2.v:248]
+WARNING: [Synth 8-6014] Unused sequential element z_common3_temp_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointdouble2.v:251]
+INFO: [Synth 8-6155] done synthesizing module 'pointdouble2' (9#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointdouble2.v:21]
+INFO: [Synth 8-6157] synthesizing module 'pointadd2' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointadd2.v:21]
+	Parameter P bound to: 256'b0100001010100001011010110100111100100110000000100010011110001100011101000101110010010010000110101101111110110111111110111110111100100010101110010100000111001000101011100010001010101000101111101011100100010111011011011100010110000100011110001110111111100010 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointadd2.v:260]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointadd2.v:438]
+WARNING: [Synth 8-6014] Unused sequential element reduce_common_temp_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointadd2.v:249]
+INFO: [Synth 8-6155] done synthesizing module 'pointadd2' (10#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/pointadd2.v:21]
+INFO: [Synth 8-6157] synthesizing module 'mod_inv' [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:21]
+	Parameter N bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101110100101001011101110010000001100011000001001000010101100010100011010101101011100111010011101110011111000011001011100111100110110111 
+	Parameter m bound to: 252'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter p bound to: 256'b1000010101000010110101101001111001001100000001000100111100011000111010001011100100100100001101011011111101101111111101111101111001000101011100101000001110010001010111000100010101010001011111010111001000101110110110111000101100001000111100011101111111000011 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:105]
+INFO: [Synth 8-226] default block is never used [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:139]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:96]
+WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:73]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:78]
+WARNING: [Synth 8-6014] Unused sequential element z_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:80]
+WARNING: [Synth 8-6014] Unused sequential element n_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:209]
+WARNING: [Synth 8-5788] Register x2_reg in module mod_inv is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:135]
+WARNING: [Synth 8-5788] Register F_reg in module mod_inv is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:196]
+WARNING: [Synth 8-5788] Register G_reg in module mod_inv is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'mod_inv' (11#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/mod_inv.v:21]
+WARNING: [Synth 8-6014] Unused sequential element result_temp_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/k_point.v:134]
+WARNING: [Synth 8-6014] Unused sequential element result1_reg was removed.  [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/k_point.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'k_point' (12#1) [D:/Li/program/vivado_program/mod_test - 副本/mod_count.srcs/sources_1/new/k_point.v:21]

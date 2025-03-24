@@ -1,0 +1,435 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2024/10/10 20:40:01
+// Design Name: 
+// Module Name: pointadd2
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////该计算I了
+module pointadd2(
+input clk,
+input rst_n,
+input [255:0]x,
+input [255:0]y,
+input [255:0]z,
+input [255:0]x1,
+input [255:0]y1,
+input [255:0]z1,
+output [255:0]xr,
+output [255:0]yr,
+output [255:0]zr,
+output xyz_valid
+    );
+reg [255:0]zr_temp;
+wire [255:0]x_common1;
+wire [255:0]y_common1;
+wire [255:0]z_common1;
+wire [255:0]x_common2;
+wire [255:0]y_common2;
+wire [255:0]z_common2;
+wire [255:0]x_common3;
+wire [255:0]y_common3;
+wire [255:0]z_common3;
+wire [255:0]x_common4;
+wire [255:0]y_common4;
+wire [255:0]z_common4;
+
+wire result_1;
+wire result_2;
+wire result_3;
+wire result_4;
+//蒙哥马利复位
+reg double_rst;
+integer cnt_double;
+always@ (posedge clk or negedge rst_n)
+begin
+	if (~rst_n)
+	begin
+		double_rst <= 0;
+		cnt_double <= 0;
+		//result_temp <=0;
+	end
+	else if (cnt_double < 8)
+	begin
+		cnt_double =cnt_double +1;
+		double_rst <=0;
+	end
+	//999-45399最慢
+	else if (7 <cnt_double && cnt_double <7500)//6269
+	begin
+		double_rst <= 1;
+		cnt_double <= cnt_double +1;
+		
+	end
+	
+	else if  (cnt_double ==7500)
+	begin
+			cnt_double <=0;
+			double_rst <=0;
+	end
+
+end
+wire montgomery_mul_rst;
+assign montgomery_mul_rst =double_rst;
+montgomery_mul montgomery1 (//A
+	.clk(clk),
+    .rst_n(montgomery_mul_rst),
+	.x(x_common1),
+	.y(y_common1),
+	.result(z_common1),
+	.result_valid(result_1)
+  );
+montgomery_mul montgomery2 (//B
+	.clk(clk),
+    .rst_n(montgomery_mul_rst),
+	.x(x_common2),
+	.y(y_common2),
+	.result(z_common2),
+	.result_valid(result_2)
+  );
+montgomery_mul montgomery3 (//D
+	.clk(clk),
+    .rst_n(montgomery_mul_rst),
+	.x(x_common3),
+	.y(y_common3),
+	.result(z_common3),
+	.result_valid(result_3)
+  );
+montgomery_mul montgomery4 (//E
+	.clk(clk),
+    .rst_n(montgomery_mul_rst),
+	.x(x_common4),
+	.y(y_common4),
+	.result(z_common4),
+	.result_valid(result_4)
+  ); 
+wire result_reduce;
+reg result_reduce_temp;
+wire [255:0]m_common;
+wire [255:0]n_common;
+wire [255:0]reduce_common;
+wire m_result;
+mod_reduce mod_reduce1 (//C
+	.clk(clk),
+    .rst_n(result_reduce),
+	.m(m_common),
+	.n(n_common),
+	.M(reduce_common),
+	.m_valid(m_result)
+  );
+wire result_add;
+wire [255:0]addx_common;
+wire [255:0]addy_common;
+wire [255:0]addz_common;
+wire z_result;
+mod_add mod_add1 (
+	.clk(clk),
+    .rst_n(result_add),
+	.x(addx_common),
+	.y(addy_common),
+	.z1(addz_common),
+	.z_valid(z_result)
+  );
+reg result_1_temp1;
+wire result_1_temp;
+reg m_result_temp1;
+wire m_result_temp;
+reg z_result_temp1;
+wire z_result_temp;
+always@(posedge clk or negedge rst_n)
+begin
+	if (~rst_n)
+	begin
+		result_1_temp1<=0;
+		m_result_temp1<=0;
+		z_result_temp1<=0;
+	end
+	else
+	begin
+		result_1_temp1<=result_1;
+		m_result_temp1<=m_result;
+		z_result_temp1<=z_result;
+	end
+end
+assign result_1_temp=(result_1_temp1^result_1)&&result_1;
+assign m_result_temp=(m_result_temp1^m_result)&&m_result;
+assign z_result_temp=(z_result_temp1^z_result)&&z_result;
+reg [4:0]cnt;//蒙哥马利
+reg [2:0]cnt1;//模减
+reg [1:0]cnt2;//模加
+always@(posedge clk or negedge rst_n)
+begin
+	if (~rst_n)
+	begin
+		cnt<=5'd0;
+		cnt1<=3'd0;
+		cnt2<=0;
+		
+	end
+	else
+	begin
+		if (result_1_temp==1&&cnt<21)
+		begin
+			cnt<=cnt+1;
+		end
+		else if(cnt==21)
+			cnt<=0;
+		if (m_result_temp==1&&cnt1<5)
+			cnt1<=cnt1+1;
+		else if(cnt1==5)
+			cnt1<=0;
+		if (z_result_temp==1&&cnt2<2)
+			cnt2<=cnt2+1;
+		else if(cnt2==2)
+			cnt2<=0;
+		
+		
+	end
+end 
+reg [255:0]x_common1_temp;//A
+reg [255:0]y_common1_temp;
+reg [255:0]z_common1_temp;
+reg [2:0]state1;
+reg [255:0]x_common3_temp;//D
+reg [255:0]y_common3_temp;
+reg [255:0]z_common3_temp;
+
+reg [255:0]m_common_temp;//C
+reg [255:0]n_common_temp;
+reg [255:0]reduce_common_temp;
+wire [255:0]G_temp;
+wire [255:0]C_temp;
+reg [255:0]C_temp1;
+always@(posedge clk or negedge rst_n)//A输入(x1,y1,z1),(x2,y2,z2)
+begin
+	if (~rst_n)
+	begin
+		state1 <=3'd0;
+		x_common1_temp<=256'd0;//A
+		y_common1_temp<=256'd0;
+		z_common1_temp<=256'd0;
+		x_common3_temp<=256'd0;//D
+		y_common3_temp<=256'd0;
+		z_common3_temp<=256'd0;
+		result_reduce_temp<=0;//模减标志位
+		m_common_temp<=256'd0;//C
+		n_common_temp<=256'd0;
+		reduce_common_temp<=256'd0;	
+		C_temp1<=256'd0;
+	end
+	else
+	begin
+		case(state1)
+		3'd0:begin
+			x_common1_temp <=z1;//计算A1=Z2*Z2
+			y_common1_temp <=z1;
+			if(result_1==1)
+			begin
+				state1<=3'd1;
+				z_common1_temp<=z_common1;
+			end
+		end
+		3'd1:begin
+			x_common1_temp <=x;//计算A=Z2*Z2*x1
+			y_common1_temp <=z_common1_temp;
+			x_common3_temp <=z1;//计算D1=Z2*Z2*z2
+			y_common3_temp <=z_common1_temp;
+			if (result_1_temp==1 &&cnt==1)
+			begin
+				state1<=3'd2;
+				z_common1_temp<=z_common1;
+				z_common3_temp<=z_common3;//D1
+			end			
+		end
+		3'd2:begin	
+				x_common3_temp <=y;//计算D=D1*y1
+				y_common3_temp <=z_common3_temp;
+				//
+			if (result_1_temp==1&&cnt==2)//C=A-B的赋值
+			begin
+				result_reduce_temp<=1;
+				m_common_temp<=z_common1_temp;//输入A
+				n_common_temp<=z_common2;//输入B
+				state1<=3'd3;
+			end			
+		end
+		3'd3:begin
+			if (m_result==1)
+				result_reduce_temp<=0;
+			if (result_1_temp==1&&cnt==3)//F=D-E的赋值
+			begin
+				result_reduce_temp<=1;
+				m_common_temp<=z_common3;//输入D
+				n_common_temp<=z_common4;//输入E
+				state1 <=3'd4;
+			end
+			if (m_result==1&&cnt1==0)//第1个蒙哥算C*C
+			begin
+				x_common1_temp<=reduce_common;//C
+				y_common1_temp<=reduce_common;//C
+				C_temp1<=reduce_common;
+			end			
+		end
+		3'd4:begin			
+			if(result_1_temp==1&&cnt==3)//计算G*C*C
+			begin
+				x_common1_temp<=G_temp;//G
+				y_common1_temp<=z_common1;//C*C
+				
+			end
+			if (m_result==1&&cnt1==1)//计算F*F
+			begin
+				x_common3_temp <=reduce_common;//F
+				y_common3_temp <=reduce_common;//F
+				//state1<=3'd5;
+			end
+		end
+		3'd5:begin
+		
+		end
+		endcase
+	end
+end
+assign C_temp=C_temp1;
+assign m_common=m_common_temp;
+assign n_common=n_common_temp;
+assign result_reduce=result_reduce_temp;
+
+assign x_common1=x_common1_temp;
+assign y_common1=y_common1_temp;
+assign x_common3=x_common3_temp;
+assign y_common3=y_common3_temp;
+reg [255:0]x_common2_temp;//B
+reg [255:0]y_common2_temp;
+reg [255:0]z_common2_temp;
+reg [2:0]state2;
+reg [255:0]x_common4_temp;//E
+reg [255:0]y_common4_temp;
+reg [255:0]z_common4_temp;
+reg result_add_temp;//G
+reg [255:0]addx_common_temp;
+reg [255:0]addy_common_temp;
+reg [255:0]G_temp1;
+always@(posedge clk or negedge rst_n)//B输入(x1,y1,z1),(x2,y2,z2)
+begin
+	if (~rst_n)
+	begin
+		state2 <=3'd0;
+		x_common2_temp<=256'd0;//B
+		y_common2_temp<=256'd0;
+		z_common2_temp<=256'd0;
+		x_common4_temp<=256'd0;//E
+		y_common4_temp<=256'd0;
+		z_common4_temp<=256'd0;
+		result_add_temp<=0;
+		addx_common_temp<=256'd0;
+		addy_common_temp<=256'd0;
+		G_temp1<=256'd0;
+		zr_temp<=256'd0;
+	end
+	else
+	begin
+		case(state2)
+		3'd0:begin
+			x_common2_temp <=z;//计算B1=Z1*Z1
+			y_common2_temp <=z;
+			if(result_1_temp==1)
+			begin
+				state2<=3'd1;
+				z_common2_temp<=z_common2;
+			end
+		end
+		3'd1:begin
+			x_common2_temp <=x1;//计算B=Z1*Z1*x2
+			y_common2_temp <=z_common2_temp;
+			x_common4_temp <=z;//计算E1=Z1*Z1*Z1
+			y_common4_temp <=z_common2_temp;
+			if (result_1_temp==1&& cnt==1)
+			begin
+				state2<=3'd2;
+				z_common2_temp<=z_common2;
+				z_common4_temp<=z_common4;//E1
+			end
+		end
+		3'd2:begin
+			x_common4_temp <=y1;//计算E=Z1*Z1*Z1*y2
+			y_common4_temp <=z_common4_temp;
+			if (result_1_temp==1&&cnt==2)//G=A+B的赋值
+			begin
+				result_add_temp<=1;
+				addx_common_temp<=z_common1_temp;//输入A
+				addy_common_temp<=z_common2;//输入B
+				state2<=3'd3;
+			end
+			if (result_1_temp==1 &&cnt==1)//计算z1*z2
+			begin
+				x_common2_temp<=z;
+				y_common2_temp<=z1;
+			end			
+		end
+		3'd3:begin
+			if (z_result==1)
+				result_add_temp<=0;
+			if (result_1_temp==1&&cnt==3)//H=D+E的赋值
+			begin
+				result_add_temp<=1;
+				addx_common_temp<=z_common3;//输入D
+				addy_common_temp<=z_common4;//输入E
+				state2 <=3'd4;
+			end
+			/*if (m_result==1&&cnt1==0)//第2个蒙哥算G*C
+			begin
+				x_common2_temp<=reduce_common;//C
+				y_common2_temp<=addz_common;//G
+				
+			end*/
+			if (result_1_temp==1 &&cnt==2)//计算z1*z2*C
+			begin
+				x_common2_temp<=z_common2;//Z1*Z2
+				y_common2_temp<=C_temp;//C
+			end
+			if (z_result==1&&cnt2==0)
+				G_temp1<=addz_common;//G
+		end
+		3'd4:begin
+			if (result_1_temp==1&& cnt==4)
+				zr_temp<=z_common2;//输出zr
+			if (result_1_temp==1&& cnt==3)//计算C*C*C
+			begin
+				x_common4_temp <=z_common1;//C*C
+				y_common4_temp <=C_temp;//C
+			end	
+		end
+		endcase
+	end
+end
+assign G_temp=G_temp1;
+assign x_common2=x_common2_temp;
+assign y_common2=y_common2_temp;
+assign x_common4=x_common4_temp;
+assign y_common4=y_common4_temp;
+assign addx_common=addx_common_temp;
+assign addy_common=addy_common_temp;
+assign result_add=result_add_temp;
+	
+	
+	
+	
+	
+	
+	
+	
+assign zr=zr_temp;	
+endmodule

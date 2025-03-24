@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="k_point_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="k_point_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="113639631000fs"></ZoomStartTime>
+      <ZoomEndTime time="119434631001fs"></ZoomEndTime>
+      <Cursor1Time time="116223635000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="251"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="341" />
+   <wvobject fp_name="/k_point_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/x" type="array">
+      <obj_property name="ElementShortName">x[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/y" type="array">
+      <obj_property name="ElementShortName">y[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k" type="array">
+      <obj_property name="ElementShortName">k[255:0]</obj_property>
+      <obj_property name="ObjectShortName">k[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/xx" type="array">
+      <obj_property name="ElementShortName">xx[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xx[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/yy" type="array">
+      <obj_property name="ElementShortName">yy[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yy[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_valid" type="logic">
+      <obj_property name="ElementShortName">k_valid</obj_property>
+      <obj_property name="ObjectShortName">k_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x" type="array">
+      <obj_property name="ElementShortName">x[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y" type="array">
+      <obj_property name="ElementShortName">y[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/k" type="array">
+      <obj_property name="ElementShortName">k[255:0]</obj_property>
+      <obj_property name="ObjectShortName">k[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xx" type="array">
+      <obj_property name="ElementShortName">xx[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xx[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yy" type="array">
+      <obj_property name="ElementShortName">yy[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yy[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/k_valid" type="logic">
+      <obj_property name="ElementShortName">k_valid</obj_property>
+      <obj_property name="ObjectShortName">k_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x1" type="array">
+      <obj_property name="ElementShortName">x1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y1" type="array">
+      <obj_property name="ElementShortName">y1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z1" type="array">
+      <obj_property name="ElementShortName">z1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/temp" type="array">
+      <obj_property name="ElementShortName">temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result1" type="logic">
+      <obj_property name="ElementShortName">result1</obj_property>
+      <obj_property name="ObjectShortName">result1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result2" type="logic">
+      <obj_property name="ElementShortName">result2</obj_property>
+      <obj_property name="ObjectShortName">result2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/n" type="array">
+      <obj_property name="ElementShortName">n[31:0]</obj_property>
+      <obj_property name="ObjectShortName">n[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid" type="logic">
+      <obj_property name="ElementShortName">add_valid</obj_property>
+      <obj_property name="ObjectShortName">add_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z2" type="array">
+      <obj_property name="ElementShortName">z2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_double" type="logic">
+      <obj_property name="ElementShortName">result_double</obj_property>
+      <obj_property name="ObjectShortName">result_double</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid" type="logic">
+      <obj_property name="ElementShortName">double_valid</obj_property>
+      <obj_property name="ObjectShortName">double_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn1" type="array">
+      <obj_property name="ElementShortName">xn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn1" type="array">
+      <obj_property name="ElementShortName">yn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn1" type="array">
+      <obj_property name="ElementShortName">zn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xq1" type="array">
+      <obj_property name="ElementShortName">xq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yq1" type="array">
+      <obj_property name="ElementShortName">yq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zq1" type="array">
+      <obj_property name="ElementShortName">zq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr1" type="array">
+      <obj_property name="ElementShortName">xr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr1" type="array">
+      <obj_property name="ElementShortName">yr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr1" type="array">
+      <obj_property name="ElementShortName">zr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_inv" type="logic">
+      <obj_property name="ElementShortName">result_inv</obj_property>
+      <obj_property name="ObjectShortName">result_inv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result" type="logic">
+      <obj_property name="ElementShortName">result</obj_property>
+      <obj_property name="ObjectShortName">result</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z3" type="array">
+      <obj_property name="ElementShortName">z3[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z3[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z4" type="array">
+      <obj_property name="ElementShortName">z4[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z4[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/c_1" type="logic">
+      <obj_property name="ElementShortName">c_1</obj_property>
+      <obj_property name="ObjectShortName">c_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_3" type="logic">
+      <obj_property name="ElementShortName">result_3</obj_property>
+      <obj_property name="ObjectShortName">result_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_4" type="logic">
+      <obj_property name="ElementShortName">result_4</obj_property>
+      <obj_property name="ObjectShortName">result_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_5" type="logic">
+      <obj_property name="ElementShortName">result_5</obj_property>
+      <obj_property name="ObjectShortName">result_5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_6" type="logic">
+      <obj_property name="ElementShortName">result_6</obj_property>
+      <obj_property name="ObjectShortName">result_6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xm1" type="array">
+      <obj_property name="ElementShortName">xm1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xm1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/ym1" type="array">
+      <obj_property name="ElementShortName">ym1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">ym1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_s" type="logic">
+      <obj_property name="ElementShortName">result_s</obj_property>
+      <obj_property name="ObjectShortName">result_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_256" type="logic">
+      <obj_property name="ElementShortName">result_256</obj_property>
+      <obj_property name="ObjectShortName">result_256</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result3" type="logic">
+      <obj_property name="ElementShortName">result3</obj_property>
+      <obj_property name="ObjectShortName">result3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_double2" type="logic">
+      <obj_property name="ElementShortName">result_double2</obj_property>
+      <obj_property name="ObjectShortName">result_double2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/state1" type="array">
+      <obj_property name="ElementShortName">state1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m" type="array">
+      <obj_property name="ElementShortName">m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/q" type="array">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m_valid" type="logic">
+      <obj_property name="ElementShortName">m_valid</obj_property>
+      <obj_property name="ObjectShortName">m_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m1_valid" type="logic">
+      <obj_property name="ElementShortName">m1_valid</obj_property>
+      <obj_property name="ObjectShortName">m1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid1" type="logic">
+      <obj_property name="ElementShortName">double_valid1</obj_property>
+      <obj_property name="ObjectShortName">double_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid12" type="logic">
+      <obj_property name="ElementShortName">double_valid12</obj_property>
+      <obj_property name="ObjectShortName">double_valid12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk_temp" type="array">
+      <obj_property name="ElementShortName">clk_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_rst" type="array">
+      <obj_property name="ElementShortName">double_rst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_rst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/cnt_double" type="array">
+      <obj_property name="ElementShortName">cnt_double[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_double[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_temp" type="array">
+      <obj_property name="ElementShortName">result_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/rst_240" type="logic">
+      <obj_property name="ElementShortName">rst_240</obj_property>
+      <obj_property name="ObjectShortName">rst_240</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk100" type="logic">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn" type="array">
+      <obj_property name="ElementShortName">xn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn" type="array">
+      <obj_property name="ElementShortName">zn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn" type="array">
+      <obj_property name="ElementShortName">yn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_delay" type="array">
+      <obj_property name="ElementShortName">double_valid_delay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_valid_delay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_delay1" type="logic">
+      <obj_property name="ElementShortName">double_valid_delay1</obj_property>
+      <obj_property name="ObjectShortName">double_valid_delay1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z" type="array">
+      <obj_property name="ElementShortName">z[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x" type="array">
+      <obj_property name="ElementShortName">x[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y" type="array">
+      <obj_property name="ElementShortName">y[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/k" type="array">
+      <obj_property name="ElementShortName">k[255:0]</obj_property>
+      <obj_property name="ObjectShortName">k[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xx" type="array">
+      <obj_property name="ElementShortName">xx[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xx[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yy" type="array">
+      <obj_property name="ElementShortName">yy[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yy[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/k_valid" type="logic">
+      <obj_property name="ElementShortName">k_valid</obj_property>
+      <obj_property name="ObjectShortName">k_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x1" type="array">
+      <obj_property name="ElementShortName">x1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y1" type="array">
+      <obj_property name="ElementShortName">y1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z1" type="array">
+      <obj_property name="ElementShortName">z1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/temp1" type="array">
+      <obj_property name="ElementShortName">temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result1" type="logic">
+      <obj_property name="ElementShortName">result1</obj_property>
+      <obj_property name="ObjectShortName">result1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result2" type="logic">
+      <obj_property name="ElementShortName">result2</obj_property>
+      <obj_property name="ObjectShortName">result2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/n" type="array">
+      <obj_property name="ElementShortName">n[31:0]</obj_property>
+      <obj_property name="ObjectShortName">n[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid" type="logic">
+      <obj_property name="ElementShortName">add_valid</obj_property>
+      <obj_property name="ObjectShortName">add_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid_up1" type="logic">
+      <obj_property name="ElementShortName">add_valid_up1</obj_property>
+      <obj_property name="ObjectShortName">add_valid_up1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn2" type="array">
+      <obj_property name="ElementShortName">xn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn2" type="array">
+      <obj_property name="ElementShortName">zn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn2" type="array">
+      <obj_property name="ElementShortName">yn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_double" type="logic">
+      <obj_property name="ElementShortName">result_double</obj_property>
+      <obj_property name="ObjectShortName">result_double</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid" type="logic">
+      <obj_property name="ElementShortName">double_valid</obj_property>
+      <obj_property name="ObjectShortName">double_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_256" type="logic">
+      <obj_property name="ElementShortName">result_256</obj_property>
+      <obj_property name="ObjectShortName">result_256</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn1" type="array">
+      <obj_property name="ElementShortName">xn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn1" type="array">
+      <obj_property name="ElementShortName">yn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn1" type="array">
+      <obj_property name="ElementShortName">zn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xq1" type="array">
+      <obj_property name="ElementShortName">xq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yq1" type="array">
+      <obj_property name="ElementShortName">yq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zq1" type="array">
+      <obj_property name="ElementShortName">zq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr1" type="array">
+      <obj_property name="ElementShortName">xr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr1" type="array">
+      <obj_property name="ElementShortName">yr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr1" type="array">
+      <obj_property name="ElementShortName">zr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr_temp" type="array">
+      <obj_property name="ElementShortName">xr_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_inv" type="logic">
+      <obj_property name="ElementShortName">result_inv</obj_property>
+      <obj_property name="ObjectShortName">result_inv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z2" type="array">
+      <obj_property name="ElementShortName">z2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z3" type="array">
+      <obj_property name="ElementShortName">z3[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z3[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z4" type="array">
+      <obj_property name="ElementShortName">z4[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z4[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/c_1" type="logic">
+      <obj_property name="ElementShortName">c_1</obj_property>
+      <obj_property name="ObjectShortName">c_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_3" type="logic">
+      <obj_property name="ElementShortName">result_3</obj_property>
+      <obj_property name="ObjectShortName">result_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_4" type="logic">
+      <obj_property name="ElementShortName">result_4</obj_property>
+      <obj_property name="ObjectShortName">result_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_5" type="logic">
+      <obj_property name="ElementShortName">result_5</obj_property>
+      <obj_property name="ObjectShortName">result_5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_6" type="logic">
+      <obj_property name="ElementShortName">result_6</obj_property>
+      <obj_property name="ObjectShortName">result_6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xm1" type="array">
+      <obj_property name="ElementShortName">xm1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xm1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/ym1" type="array">
+      <obj_property name="ElementShortName">ym1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">ym1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_s" type="logic">
+      <obj_property name="ElementShortName">result_s</obj_property>
+      <obj_property name="ObjectShortName">result_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result3" type="logic">
+      <obj_property name="ElementShortName">result3</obj_property>
+      <obj_property name="ObjectShortName">result3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_double2" type="logic">
+      <obj_property name="ElementShortName">result_double2</obj_property>
+      <obj_property name="ObjectShortName">result_double2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/state1" type="array">
+      <obj_property name="ElementShortName">state1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m" type="array">
+      <obj_property name="ElementShortName">m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m_0" type="array">
+      <obj_property name="ElementShortName">m_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/q" type="array">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/p" type="array">
+      <obj_property name="ElementShortName">p[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m_valid" type="logic">
+      <obj_property name="ElementShortName">m_valid</obj_property>
+      <obj_property name="ObjectShortName">m_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m1_valid" type="logic">
+      <obj_property name="ElementShortName">m1_valid</obj_property>
+      <obj_property name="ObjectShortName">m1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid1" type="logic">
+      <obj_property name="ElementShortName">double_valid1</obj_property>
+      <obj_property name="ObjectShortName">double_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid12" type="logic">
+      <obj_property name="ElementShortName">double_valid12</obj_property>
+      <obj_property name="ObjectShortName">double_valid12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk_temp" type="array">
+      <obj_property name="ElementShortName">clk_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_rst" type="array">
+      <obj_property name="ElementShortName">double_rst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_rst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/cnt_double" type="array">
+      <obj_property name="ElementShortName">cnt_double[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_double[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_temp" type="array">
+      <obj_property name="ElementShortName">result_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result" type="logic">
+      <obj_property name="ElementShortName">result</obj_property>
+      <obj_property name="ObjectShortName">result</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/rst_240" type="logic">
+      <obj_property name="ElementShortName">rst_240</obj_property>
+      <obj_property name="ObjectShortName">rst_240</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk100" type="logic">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn" type="array">
+      <obj_property name="ElementShortName">xn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn" type="array">
+      <obj_property name="ElementShortName">zn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn" type="array">
+      <obj_property name="ElementShortName">yn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr" type="array">
+      <obj_property name="ElementShortName">xr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr" type="array">
+      <obj_property name="ElementShortName">zr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr" type="array">
+      <obj_property name="ElementShortName">yr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x_temp" type="array">
+      <obj_property name="ElementShortName">x_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y_temp" type="array">
+      <obj_property name="ElementShortName">y_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z_temp" type="array">
+      <obj_property name="ElementShortName">z_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x_temp1" type="array">
+      <obj_property name="ElementShortName">x_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z_temp1" type="array">
+      <obj_property name="ElementShortName">z_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y_temp1" type="array">
+      <obj_property name="ElementShortName">y_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_delay" type="array">
+      <obj_property name="ElementShortName">double_valid_delay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_valid_delay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_up" type="logic">
+      <obj_property name="ElementShortName">double_valid_up</obj_property>
+      <obj_property name="ObjectShortName">double_valid_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_up1" type="logic">
+      <obj_property name="ElementShortName">double_valid_up1</obj_property>
+      <obj_property name="ObjectShortName">double_valid_up1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_delay1" type="logic">
+      <obj_property name="ElementShortName">double_valid_delay1</obj_property>
+      <obj_property name="ObjectShortName">double_valid_delay1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/temp" type="array">
+      <obj_property name="ElementShortName">temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/ad_up" type="array">
+      <obj_property name="ElementShortName">ad_up[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ad_up[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid1_delay" type="logic">
+      <obj_property name="ElementShortName">add_valid1_delay</obj_property>
+      <obj_property name="ObjectShortName">add_valid1_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid_up" type="logic">
+      <obj_property name="ElementShortName">add_valid_up</obj_property>
+      <obj_property name="ObjectShortName">add_valid_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z" type="array">
+      <obj_property name="ElementShortName">z[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x" type="array">
+      <obj_property name="ElementShortName">x[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y" type="array">
+      <obj_property name="ElementShortName">y[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/k" type="array">
+      <obj_property name="ElementShortName">k[255:0]</obj_property>
+      <obj_property name="ObjectShortName">k[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xx" type="array">
+      <obj_property name="ElementShortName">xx[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xx[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yy" type="array">
+      <obj_property name="ElementShortName">yy[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yy[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/k_valid" type="logic">
+      <obj_property name="ElementShortName">k_valid</obj_property>
+      <obj_property name="ObjectShortName">k_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x1" type="array">
+      <obj_property name="ElementShortName">x1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y1" type="array">
+      <obj_property name="ElementShortName">y1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z1" type="array">
+      <obj_property name="ElementShortName">z1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/temp1" type="array">
+      <obj_property name="ElementShortName">temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result1" type="logic">
+      <obj_property name="ElementShortName">result1</obj_property>
+      <obj_property name="ObjectShortName">result1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result2" type="logic">
+      <obj_property name="ElementShortName">result2</obj_property>
+      <obj_property name="ObjectShortName">result2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/n" type="array">
+      <obj_property name="ElementShortName">n[31:0]</obj_property>
+      <obj_property name="ObjectShortName">n[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid" type="logic">
+      <obj_property name="ElementShortName">add_valid</obj_property>
+      <obj_property name="ObjectShortName">add_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn2" type="array">
+      <obj_property name="ElementShortName">xn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn2" type="array">
+      <obj_property name="ElementShortName">zn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn2" type="array">
+      <obj_property name="ElementShortName">yn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_double" type="logic">
+      <obj_property name="ElementShortName">result_double</obj_property>
+      <obj_property name="ObjectShortName">result_double</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid" type="logic">
+      <obj_property name="ElementShortName">double_valid</obj_property>
+      <obj_property name="ObjectShortName">double_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn1" type="array">
+      <obj_property name="ElementShortName">xn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn1" type="array">
+      <obj_property name="ElementShortName">yn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn1" type="array">
+      <obj_property name="ElementShortName">zn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xq1" type="array">
+      <obj_property name="ElementShortName">xq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yq1" type="array">
+      <obj_property name="ElementShortName">yq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zq1" type="array">
+      <obj_property name="ElementShortName">zq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr1" type="array">
+      <obj_property name="ElementShortName">xr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr1" type="array">
+      <obj_property name="ElementShortName">yr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr1" type="array">
+      <obj_property name="ElementShortName">zr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_inv" type="logic">
+      <obj_property name="ElementShortName">result_inv</obj_property>
+      <obj_property name="ObjectShortName">result_inv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z2" type="array">
+      <obj_property name="ElementShortName">z2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z3" type="array">
+      <obj_property name="ElementShortName">z3[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z3[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z4" type="array">
+      <obj_property name="ElementShortName">z4[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z4[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/c_1" type="logic">
+      <obj_property name="ElementShortName">c_1</obj_property>
+      <obj_property name="ObjectShortName">c_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_3" type="logic">
+      <obj_property name="ElementShortName">result_3</obj_property>
+      <obj_property name="ObjectShortName">result_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_4" type="logic">
+      <obj_property name="ElementShortName">result_4</obj_property>
+      <obj_property name="ObjectShortName">result_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_5" type="logic">
+      <obj_property name="ElementShortName">result_5</obj_property>
+      <obj_property name="ObjectShortName">result_5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_6" type="logic">
+      <obj_property name="ElementShortName">result_6</obj_property>
+      <obj_property name="ObjectShortName">result_6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xm1" type="array">
+      <obj_property name="ElementShortName">xm1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xm1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/ym1" type="array">
+      <obj_property name="ElementShortName">ym1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">ym1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_s" type="logic">
+      <obj_property name="ElementShortName">result_s</obj_property>
+      <obj_property name="ObjectShortName">result_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_256" type="logic">
+      <obj_property name="ElementShortName">result_256</obj_property>
+      <obj_property name="ObjectShortName">result_256</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result3" type="logic">
+      <obj_property name="ElementShortName">result3</obj_property>
+      <obj_property name="ObjectShortName">result3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_double2" type="logic">
+      <obj_property name="ElementShortName">result_double2</obj_property>
+      <obj_property name="ObjectShortName">result_double2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/state1" type="array">
+      <obj_property name="ElementShortName">state1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m" type="array">
+      <obj_property name="ElementShortName">m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m_0" type="array">
+      <obj_property name="ElementShortName">m_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/q" type="array">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/p" type="array">
+      <obj_property name="ElementShortName">p[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m_valid" type="logic">
+      <obj_property name="ElementShortName">m_valid</obj_property>
+      <obj_property name="ObjectShortName">m_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m1_valid" type="logic">
+      <obj_property name="ElementShortName">m1_valid</obj_property>
+      <obj_property name="ObjectShortName">m1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid1" type="logic">
+      <obj_property name="ElementShortName">double_valid1</obj_property>
+      <obj_property name="ObjectShortName">double_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid12" type="logic">
+      <obj_property name="ElementShortName">double_valid12</obj_property>
+      <obj_property name="ObjectShortName">double_valid12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk_temp" type="array">
+      <obj_property name="ElementShortName">clk_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_rst" type="array">
+      <obj_property name="ElementShortName">double_rst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_rst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/cnt_double" type="array">
+      <obj_property name="ElementShortName">cnt_double[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_double[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_temp" type="array">
+      <obj_property name="ElementShortName">result_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result" type="logic">
+      <obj_property name="ElementShortName">result</obj_property>
+      <obj_property name="ObjectShortName">result</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/rst_240" type="logic">
+      <obj_property name="ElementShortName">rst_240</obj_property>
+      <obj_property name="ObjectShortName">rst_240</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk100" type="logic">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn" type="array">
+      <obj_property name="ElementShortName">xn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn" type="array">
+      <obj_property name="ElementShortName">zn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn" type="array">
+      <obj_property name="ElementShortName">yn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr" type="array">
+      <obj_property name="ElementShortName">xr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr" type="array">
+      <obj_property name="ElementShortName">zr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr" type="array">
+      <obj_property name="ElementShortName">yr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x_temp" type="array">
+      <obj_property name="ElementShortName">x_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y_temp" type="array">
+      <obj_property name="ElementShortName">y_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z_temp" type="array">
+      <obj_property name="ElementShortName">z_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x_temp1" type="array">
+      <obj_property name="ElementShortName">x_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z_temp1" type="array">
+      <obj_property name="ElementShortName">z_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y_temp1" type="array">
+      <obj_property name="ElementShortName">y_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr_temp" type="array">
+      <obj_property name="ElementShortName">zr_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr_temp" type="array">
+      <obj_property name="ElementShortName">yr_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr2" type="array">
+      <obj_property name="ElementShortName">xr2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr2" type="array">
+      <obj_property name="ElementShortName">yr2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr2" type="array">
+      <obj_property name="ElementShortName">zr2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_delay" type="array">
+      <obj_property name="ElementShortName">double_valid_delay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_valid_delay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_up" type="logic">
+      <obj_property name="ElementShortName">double_valid_up</obj_property>
+      <obj_property name="ObjectShortName">double_valid_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_up1" type="logic">
+      <obj_property name="ElementShortName">double_valid_up1</obj_property>
+      <obj_property name="ObjectShortName">double_valid_up1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_delay1" type="logic">
+      <obj_property name="ElementShortName">double_valid_delay1</obj_property>
+      <obj_property name="ObjectShortName">double_valid_delay1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/temp" type="array">
+      <obj_property name="ElementShortName">temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/ad_up" type="array">
+      <obj_property name="ElementShortName">ad_up[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ad_up[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid1_delay" type="logic">
+      <obj_property name="ElementShortName">add_valid1_delay</obj_property>
+      <obj_property name="ObjectShortName">add_valid1_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid_up" type="logic">
+      <obj_property name="ElementShortName">add_valid_up</obj_property>
+      <obj_property name="ObjectShortName">add_valid_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid1" type="logic">
+      <obj_property name="ElementShortName">add_valid1</obj_property>
+      <obj_property name="ObjectShortName">add_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z" type="array">
+      <obj_property name="ElementShortName">z[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x" type="array">
+      <obj_property name="ElementShortName">x[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y" type="array">
+      <obj_property name="ElementShortName">y[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/k" type="array">
+      <obj_property name="ElementShortName">k[255:0]</obj_property>
+      <obj_property name="ObjectShortName">k[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xx" type="array">
+      <obj_property name="ElementShortName">xx[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xx[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yy" type="array">
+      <obj_property name="ElementShortName">yy[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yy[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/k_valid" type="logic">
+      <obj_property name="ElementShortName">k_valid</obj_property>
+      <obj_property name="ObjectShortName">k_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x1" type="array">
+      <obj_property name="ElementShortName">x1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y1" type="array">
+      <obj_property name="ElementShortName">y1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z1" type="array">
+      <obj_property name="ElementShortName">z1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/temp1" type="array">
+      <obj_property name="ElementShortName">temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result1" type="logic">
+      <obj_property name="ElementShortName">result1</obj_property>
+      <obj_property name="ObjectShortName">result1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result2" type="logic">
+      <obj_property name="ElementShortName">result2</obj_property>
+      <obj_property name="ObjectShortName">result2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/n" type="array">
+      <obj_property name="ElementShortName">n[31:0]</obj_property>
+      <obj_property name="ObjectShortName">n[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid" type="logic">
+      <obj_property name="ElementShortName">add_valid</obj_property>
+      <obj_property name="ObjectShortName">add_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid_up1" type="logic">
+      <obj_property name="ElementShortName">add_valid_up1</obj_property>
+      <obj_property name="ObjectShortName">add_valid_up1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn2" type="array">
+      <obj_property name="ElementShortName">xn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn2" type="array">
+      <obj_property name="ElementShortName">zn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn2" type="array">
+      <obj_property name="ElementShortName">yn2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_double" type="logic">
+      <obj_property name="ElementShortName">result_double</obj_property>
+      <obj_property name="ObjectShortName">result_double</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid" type="logic">
+      <obj_property name="ElementShortName">double_valid</obj_property>
+      <obj_property name="ObjectShortName">double_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn1" type="array">
+      <obj_property name="ElementShortName">xn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn1" type="array">
+      <obj_property name="ElementShortName">yn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn1" type="array">
+      <obj_property name="ElementShortName">zn1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xq1" type="array">
+      <obj_property name="ElementShortName">xq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yq1" type="array">
+      <obj_property name="ElementShortName">yq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zq1" type="array">
+      <obj_property name="ElementShortName">zq1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zq1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr1" type="array">
+      <obj_property name="ElementShortName">xr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr1" type="array">
+      <obj_property name="ElementShortName">yr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr1" type="array">
+      <obj_property name="ElementShortName">zr1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x_temp1" type="array">
+      <obj_property name="ElementShortName">x_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_inv" type="logic">
+      <obj_property name="ElementShortName">result_inv</obj_property>
+      <obj_property name="ObjectShortName">result_inv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z2" type="array">
+      <obj_property name="ElementShortName">z2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z3" type="array">
+      <obj_property name="ElementShortName">z3[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z3[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z4" type="array">
+      <obj_property name="ElementShortName">z4[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z4[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/c_1" type="logic">
+      <obj_property name="ElementShortName">c_1</obj_property>
+      <obj_property name="ObjectShortName">c_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_3" type="logic">
+      <obj_property name="ElementShortName">result_3</obj_property>
+      <obj_property name="ObjectShortName">result_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_4" type="logic">
+      <obj_property name="ElementShortName">result_4</obj_property>
+      <obj_property name="ObjectShortName">result_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_5" type="logic">
+      <obj_property name="ElementShortName">result_5</obj_property>
+      <obj_property name="ObjectShortName">result_5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_6" type="logic">
+      <obj_property name="ElementShortName">result_6</obj_property>
+      <obj_property name="ObjectShortName">result_6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xm1" type="array">
+      <obj_property name="ElementShortName">xm1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xm1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/ym1" type="array">
+      <obj_property name="ElementShortName">ym1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">ym1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_s" type="logic">
+      <obj_property name="ElementShortName">result_s</obj_property>
+      <obj_property name="ObjectShortName">result_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_256" type="logic">
+      <obj_property name="ElementShortName">result_256</obj_property>
+      <obj_property name="ObjectShortName">result_256</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result3" type="logic">
+      <obj_property name="ElementShortName">result3</obj_property>
+      <obj_property name="ObjectShortName">result3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_double2" type="logic">
+      <obj_property name="ElementShortName">result_double2</obj_property>
+      <obj_property name="ObjectShortName">result_double2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/state1" type="array">
+      <obj_property name="ElementShortName">state1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m" type="array">
+      <obj_property name="ElementShortName">m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m_0" type="array">
+      <obj_property name="ElementShortName">m_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/q" type="array">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/p" type="array">
+      <obj_property name="ElementShortName">p[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m_valid" type="logic">
+      <obj_property name="ElementShortName">m_valid</obj_property>
+      <obj_property name="ObjectShortName">m_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/m1_valid" type="logic">
+      <obj_property name="ElementShortName">m1_valid</obj_property>
+      <obj_property name="ObjectShortName">m1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid1" type="logic">
+      <obj_property name="ElementShortName">double_valid1</obj_property>
+      <obj_property name="ObjectShortName">double_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid12" type="logic">
+      <obj_property name="ElementShortName">double_valid12</obj_property>
+      <obj_property name="ObjectShortName">double_valid12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk_temp" type="array">
+      <obj_property name="ElementShortName">clk_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_rst" type="array">
+      <obj_property name="ElementShortName">double_rst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_rst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/cnt_double" type="array">
+      <obj_property name="ElementShortName">cnt_double[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_double[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result_temp" type="array">
+      <obj_property name="ElementShortName">result_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/result" type="logic">
+      <obj_property name="ElementShortName">result</obj_property>
+      <obj_property name="ObjectShortName">result</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/rst_240" type="logic">
+      <obj_property name="ElementShortName">rst_240</obj_property>
+      <obj_property name="ObjectShortName">rst_240</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/clk100" type="logic">
+      <obj_property name="ElementShortName">clk100</obj_property>
+      <obj_property name="ObjectShortName">clk100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xn" type="array">
+      <obj_property name="ElementShortName">xn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zn" type="array">
+      <obj_property name="ElementShortName">zn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yn" type="array">
+      <obj_property name="ElementShortName">yn[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yn[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr" type="array">
+      <obj_property name="ElementShortName">xr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr" type="array">
+      <obj_property name="ElementShortName">zr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr" type="array">
+      <obj_property name="ElementShortName">yr[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/x_temp" type="array">
+      <obj_property name="ElementShortName">x_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">x_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y_temp" type="array">
+      <obj_property name="ElementShortName">y_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z_temp" type="array">
+      <obj_property name="ElementShortName">z_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z_temp1" type="array">
+      <obj_property name="ElementShortName">z_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/y_temp1" type="array">
+      <obj_property name="ElementShortName">y_temp1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">y_temp1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr_temp" type="array">
+      <obj_property name="ElementShortName">xr_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr_temp" type="array">
+      <obj_property name="ElementShortName">zr_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr_temp" type="array">
+      <obj_property name="ElementShortName">yr_temp[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr_temp[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/xr2" type="array">
+      <obj_property name="ElementShortName">xr2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">xr2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/yr2" type="array">
+      <obj_property name="ElementShortName">yr2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">yr2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/zr2" type="array">
+      <obj_property name="ElementShortName">zr2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">zr2[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_delay" type="array">
+      <obj_property name="ElementShortName">double_valid_delay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_valid_delay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_up" type="logic">
+      <obj_property name="ElementShortName">double_valid_up</obj_property>
+      <obj_property name="ObjectShortName">double_valid_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_up1" type="logic">
+      <obj_property name="ElementShortName">double_valid_up1</obj_property>
+      <obj_property name="ObjectShortName">double_valid_up1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/double_valid_delay1" type="logic">
+      <obj_property name="ElementShortName">double_valid_delay1</obj_property>
+      <obj_property name="ObjectShortName">double_valid_delay1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/temp" type="array">
+      <obj_property name="ElementShortName">temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/ad_up" type="array">
+      <obj_property name="ElementShortName">ad_up[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ad_up[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid1_delay" type="logic">
+      <obj_property name="ElementShortName">add_valid1_delay</obj_property>
+      <obj_property name="ObjectShortName">add_valid1_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid_up" type="logic">
+      <obj_property name="ElementShortName">add_valid_up</obj_property>
+      <obj_property name="ObjectShortName">add_valid_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid_up1" type="logic">
+      <obj_property name="ElementShortName">add_valid_up1</obj_property>
+      <obj_property name="ObjectShortName">add_valid_up1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/add_valid1" type="logic">
+      <obj_property name="ElementShortName">add_valid1</obj_property>
+      <obj_property name="ObjectShortName">add_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/k_point_tb/k_point_tb/z" type="array">
+      <obj_property name="ElementShortName">z[255:0]</obj_property>
+      <obj_property name="ObjectShortName">z[255:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,245 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2024/10/09 10:35:52
+// Design Name: 
+// Module Name: montgomery_mul_2
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module montgomery_mul_2(
+input clk,
+input rst_n,
+input [255:0] x,
+input [255:0] y,
+output [255:0]result,
+output result_valid
+    );
+wire [255:0] x_common;
+wire [255:0] y_common;
+wire [511:0] z_common;	
+
+reg [255:0] x_temp;
+reg [255:0] y_temp;	
+parameter P=256'h8542D69E4C044F18E8B92435BF6FF7DE457283915C45517D722EDB8B08F1DFC3;
+parameter P_1=256'hACE8C019117B91A87C85E2872C08DD0D3B8465BC9C2E9D06A2A0380C50F77715;  // (-P^-1)mod_R	
+parameter R2=256'h0AE55229283CD96AEE4D87DA90D8C66CEB372DA83FC9C6363D579C46F6DE18F2;
+//乘法器复位
+reg double_rst;
+integer cnt_double;
+always@ (posedge clk or negedge rst_n)
+begin
+	if (~rst_n)
+	begin
+		double_rst <= 0;
+		cnt_double <= 0;
+		//result_temp <=0;
+	end
+	else if (cnt_double < 5)
+	begin
+		cnt_double =cnt_double +1;
+		double_rst <=0;
+	end
+	//999-45399最慢
+	else if (4 <cnt_double && cnt_double <780)//45399 15499 1549
+	begin
+		double_rst <= 1;
+		cnt_double <= cnt_double +1;
+		
+	end
+	
+	else if  (cnt_double ==780)
+	begin
+			cnt_double <=0;
+			double_rst <=0;
+	end
+
+end
+wire mult_rst =double_rst;
+///////求x*R2
+mult256 mult256_1 (
+	.clk(clk),
+    .rst_n(mult_rst),
+	.str1(x_common),
+	.str2(y_common),
+	.b(z_common),//X为temp =x*R2
+	.b_valid(b1_valid)
+  );
+reg b1_valid_temp;
+reg b3_valid_temp;
+wire b3_valid;
+reg [1:0]cnt;
+reg [1:0]state;
+always@(posedge clk or negedge rst_n)
+begin
+	if (~rst_n)
+	begin
+		cnt<=2'd0;
+		//b1_valid_temp<=0;
+	end
+	else begin
+		b1_valid_temp<=b1_valid;
+		/*if (b_valid ==1 && cnt <3)
+			cnt<=cnt+1;
+		else if (cnt ==3)
+			cnt <=0;*/
+	end
+end
+assign b_valid1 = b1_valid ^b1_valid_temp;
+assign b_valid = b_valid1 && b1_valid;
+always@(posedge clk or negedge rst_n)
+begin
+	if (~rst_n)
+		cnt<=2'd0;
+	else
+	begin
+		if (b_valid ==1 && cnt <3)
+			cnt<=cnt+1;
+		else if (cnt ==3)
+			cnt <=0;
+	end
+end
+///x*R2状态机
+reg [255:0] z_temp;
+reg [511:0] mp_x1;
+reg [511:0] temp1;
+always@(posedge clk or negedge rst_n)
+begin
+	if (~rst_n)
+		begin
+			state<=2'd0;
+			x_temp<=256'd0;
+			y_temp<=256'd0;
+			z_temp<=256'd0;			
+			mp_x1 <=512'd0;
+			temp1 <=512'd0;
+			b3_valid_temp<=0;
+		end
+
+	else
+		begin
+			case(state)
+			2'd0:begin
+					x_temp<=x;
+					y_temp<=R2;
+				if (b_valid ==1 && cnt==0)
+					begin
+						state<=2'd1;
+						z_temp <=z_common[255:0];
+						temp1 <=z_common;
+					end
+			end
+			2'd1:begin					
+					x_temp<=P_1;
+					y_temp<=z_temp;
+					if (b_valid ==1 && cnt==1)
+					begin
+						state<=2'd2;
+						z_temp <=z_common[255:0];
+					end
+			end
+			2'd2:begin
+					x_temp<=z_temp;
+					y_temp<=P;
+					if (b_valid ==1 && cnt==2)
+					begin
+						b3_valid_temp <=1;
+						mp_x1 <=z_common;
+					end
+			end
+			endcase
+
+		end
+
+end
+assign x_common =x_temp;
+assign y_common =y_temp;
+assign b3_valid =b3_valid_temp;
+wire [511:0] temp;
+wire [511:0] mp_x;
+assign temp =temp1;
+assign mp_x =mp_x1;
+
+reg [1:0]state1;
+reg [512:0] x3;
+reg [256:0] x4;
+reg [256:0] x5;
+wire [256:0] x5_1;
+
+reg x_valid;
+reg [256:0]P1;
+always@(posedge clk or negedge b3_valid)
+ begin
+		if (~b3_valid)
+		begin
+			x4 <= 257'd0;
+			x5 <= 257'd0;
+			x_valid <=0;
+			state1 <= 2'd0;
+			P1 <=257'd0;
+		end
+		else 
+		begin
+			case(state1)
+				2'd0:begin//
+						 x3 <= temp + mp_x;
+						 state1 <= 2'd1;
+					end
+				2'd1:begin
+						 x4 <= x3[512:256];
+						 P1 <= {0,P};
+						 state1 <=2'd2;
+				end	
+				2'd2:begin 
+						if (x4 > P1)
+							begin
+								x5 <= {0,(x4 -P)};
+								x_valid <=1;
+							end
+						  else
+							begin
+								x5 <= x4;
+								x_valid <=1;
+							end
+					end
+			endcase
+		end
+end
+assign x5_1 = x5;
+assign result =z_common[255:0];
+assign result_valid =b3_valid;
+mult256 mult256_2 (
+	.clk(clk),
+    .rst_n(mult_rst),
+	.str1(x),
+	.str2(R2),
+	.b(temp),//X为temp =x*R2
+	.b_valid(b1_valid)
+  );
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+endmodule

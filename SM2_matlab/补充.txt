@@ -1,0 +1,14 @@
+6月16号
+
+已完成任务：哈希函数matlab代码  256位大数乘代码  montgomery模乘代码（还未验证）
+
+mult256.m : 256位大位数乘法
+
+hash.m :哈希函数
+FF.m GG.m :  布尔函数（hash）
+P0.m P1.m :  置换函数（hash）
+shiftleft.m  :  循环左移（hash）
+
+montgomery_mul.m  : 蒙哥马利模乘
+data_add.m : 16进制数的加法
+data_reduce.m  : 16进制数减法

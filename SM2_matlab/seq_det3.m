@@ -1,0 +1,167 @@
+cnt =0;
+cnt1 =0;
+cnt2 =0;
+v_test =1;
+for i=1:v_test
+% % 生成一个1x256的随机二进制向量，其中包含0和1
+% randBinStr = randi([0, 1], 1, 256);
+% 
+% % 将二进制向量转换为字符串
+% binStr = num2str(randBinStr);
+% binaryNumber = binStr(~isspace(binStr)); % 移除空格
+% for i = 1:256
+%     k_bit(i) = bin2dec(array3(i));
+% end
+% 假设binaryNumber是一个包含二进制数字的字符串
+binaryNumber = '0110110010110010100011011001100100111000010111000001011101011100100101001111100101001110100100110100100000010111011001100011111111000001011101101101100100100101110111010111001010110111001001110010011000001101101110101010111000011111101100101111100101101111';
+
+% 使用正则表达式匹配所有连续的1
+pattern = '11+';
+
+% 将匹配到的连续1替换为空字符串
+binaryNumber = regexprep(binaryNumber, pattern, '2');
+% 定义要检测的序列
+sequences0 = {'2'};
+
+% 初始化一个数组来存储每个序列的个数
+sequenceCounts0 = zeros(1, length(sequences0));
+
+% 对每个序列进行检测
+for i = 1:length(sequences0)
+    % 使用正则表达式查找序列
+    pattern0 = strcat(sequences0{i}, '(?!(1))');
+    sequencePositions0 = regexp(binaryNumber, pattern0);
+    
+    % 计算序列的个数
+    sequenceCounts0(i) = length(sequencePositions0);
+end
+% 定义要检测的序列
+sequences = {'10101'};
+
+% 初始化一个数组来存储每个序列的个数
+sequenceCounts = zeros(1, length(sequences));
+
+% 对每个序列进行检测
+for i = 1:length(sequences)
+    % 使用正则表达式查找序列
+    pattern1 = strcat(sequences{i}, '(?!(1))');
+    sequencePositions = regexp(binaryNumber, pattern1);
+    
+    % 计算序列的个数
+    sequenceCounts(i) = length(sequencePositions);
+   
+    % 从字符串中去除检测到的序列
+%     binaryNumber = regexprep(binaryNumber, pattern, '3');
+end
+cnt = cnt+sequenceCounts;
+pattern2 = '10101';
+binaryNumber = regexprep(binaryNumber, pattern2, '3');
+
+
+% 定义要检测的序列
+sequences1 = {'101'};
+
+% 初始化一个数组来存储每个序列的个数
+sequenceCounts1 = zeros(1, length(sequences1));
+
+% 对每个序列进行检测
+for i = 1:length(sequences1)
+    % 使用strfind函数查找序列
+    sequencePositions1 = strfind(binaryNumber, sequences1{i});
+    % 计算序列的个数
+    sequenceCounts1(i) = length(sequencePositions1);
+    
+end
+cnt1 = cnt1+sequenceCounts1;
+pattern3 = '101';
+binaryNumber = regexprep(binaryNumber, pattern3, '4');
+
+% 定义要检测的序列
+sequences2 = {'1001'};
+
+% 初始化一个数组来存储每个序列的个数
+sequenceCounts2 = zeros(1, length(sequences2));
+
+% 对每个序列进行检测
+for i = 1:length(sequences2)
+    % 使用strfind函数查找序列
+    sequencePositions2 = strfind(binaryNumber, sequences2{i});
+    % 计算序列的个数
+    sequenceCounts2(i) = length(sequencePositions2);
+end
+cnt2 = cnt2+sequenceCounts2;
+pattern4 = '1001'; 
+binaryNumber = regexprep(binaryNumber, pattern4, '5');
+
+
+% 定义要检测的序列
+sequences3 = {'10101'};
+
+% 初始化一个数组来存储每个序列的个数
+sequenceCounts3 = zeros(1, length(sequences3));
+
+% 对每个序列进行检测
+for i = 1:length(sequences3)
+    % 使用strfind函数查找序列
+    sequencePositions3 = strfind(binaryNumber, sequences3{i});
+    % 计算序列的个数
+    sequenceCounts3(i) = length(sequencePositions3);
+end
+cnt2 = cnt2+sequenceCounts3;
+pattern5 = '10101'; 
+binaryNumber = regexprep(binaryNumber, pattern5, '6');
+
+% 定义要检测的序列
+sequences4 = {'101'};
+
+% 初始化一个数组来存储每个序列的个数
+sequenceCounts4 = zeros(1, length(sequences4));
+
+% 对每个序列进行检测
+for i = 1:length(sequences4)
+    % 使用strfind函数查找序列
+    sequencePositions4 = strfind(binaryNumber, sequences4{i});
+    % 计算序列的个数
+    sequenceCounts4(i) = length(sequencePositions4);
+end
+cnt2 = cnt2+sequenceCounts4;
+pattern6 = '101'; 
+binaryNumber = regexprep(binaryNumber, pattern6, '7');
+
+% 定义要检测的序列
+sequences9 = {'11'};
+
+% 初始化一个数组来存储每个序列的个数
+sequenceCounts9 = zeros(1, length(sequences9));
+
+% 对每个序列进行检测
+for i = 1:length(sequences9)
+    % 使用strfind函数查找序列
+    sequencePositions9 = strfind(binaryNumber, sequences9{i});
+    % 计算序列的个数
+    sequenceCounts9(i) = length(sequencePositions9);
+end
+cnt2 = cnt2+sequenceCounts9;
+pattern9 = '11'; 
+binaryNumber = regexprep(binaryNumber, pattern9, '9');
+
+% 定义要检测的序列
+sequenceso = {'1'};
+
+% 初始化一个数组来存储每个序列的个数
+sequenceCountso = zeros(1, length(sequenceso));
+
+% 对每个序列进行检测
+for i = 1:length(sequenceso)
+    % 使用strfind函数查找序列
+    sequencePositionso = strfind(binaryNumber, sequenceso{i});
+    % 计算序列的个数
+    sequenceCountso(i) = length(sequencePositionso);
+end
+
+end
+
+
+
+
+

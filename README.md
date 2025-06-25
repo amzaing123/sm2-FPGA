@@ -53,6 +53,8 @@
      P ← 2P
      若 k_j = 1，Q ← Q + P
    返回 Q
+4. **Hash算法**
+5. **模逆算法**
 ## 四、算法参考文章链接
 
 - [Montgomery模乘](https://blog.csdn.net/weixin_46395886/article/details/112988136)

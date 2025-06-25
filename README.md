@@ -54,7 +54,8 @@
      若 k_j = 1，Q ← Q + P
    返回 Q
 ## 四、算法参考文章链接
-1.**Montgomery模乘：https://blog.csdn.net/weixin_46395886/article/details/112988136**
-2.**点加和倍点：SM2算法快速实现研究**
-3.**hash算法:https://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=sm2**
-4.**模逆算法：椭圆加密算法研究**
+
+- [Montgomery模乘](https://blog.csdn.net/weixin_46395886/article/details/112988136)
+- 点加和倍点：SM2算法快速实现研究
+- [Hash算法标准](https://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=sm2)
+- 模逆算法：椭圆加密算法研究

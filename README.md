@@ -1,7 +1,10 @@
 # sm2-FPGA
 
 本项目实现了 SM2 算法在 FPGA 和 MATLAB 上的开发与仿真。
+## 目录说明
 
+- **SM2_matlab**：MATLAB 仿真代码，用于验证 SM2 算法的功能与正确性。
+- **mod_test**：FPGA 开发程序，包含 SM2 算法在 FPGA 上的实现与测试模块。
 ## 一、项目内容
 
 - 实现 SM2 数字签名与验签功能
@@ -61,3 +64,6 @@
 - 点加和倍点：SM2算法快速实现研究
 - [Hash算法标准](https://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=sm2)
 - 模逆算法：椭圆加密算法研究
+## 五、使用说明
+1. 进入 `SM2_matlab` 文件夹，可运行 MATLAB 脚本进行 SM2 仿真测试。
+2. 进入 `mod_test` 文件夹，获取 FPGA 相关的 Verilog 源码及工程文件。
